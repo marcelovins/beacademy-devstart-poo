@@ -7,6 +7,8 @@ class Curso {
     public string $alunosMatriculados;
     public string $areaDeConhecimento;
 
+    //exercicio Gets e Sets
+
     public function getCargaHoraria(): int
     {
         return $this->cargaHoraria;

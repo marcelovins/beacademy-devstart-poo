@@ -8,6 +8,14 @@ class Cliente
     public string $cpf;
     public string $cep;
 
+    //exercicio método construtor
+
+    public function __construct(string $novoNome, float $novoCpf)
+    {
+        $this->nome = $novoNome;
+        $this->valor = $novoCpf;
+    }
+
     //exercicio Gets e Sets
 
     public function getNome(): string
