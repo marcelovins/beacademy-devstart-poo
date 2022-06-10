@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class Usuario 
+abstract class Usuario //abstratct=> essa palavra foi adicionada para informar que esta classe é abstrata, não pode ser usada. serve apenas como base para outras classes (classe pai).
 {
     private string $nome;
     private string $email;

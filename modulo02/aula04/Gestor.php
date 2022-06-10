@@ -41,7 +41,7 @@ class Gestor extends Usuario
         return $this->horario;
     }
 
-    public function setHorario(string $hoario): void
+    public function setHorario(string $horario): void
     {
         $this->horario = $horario;
     }

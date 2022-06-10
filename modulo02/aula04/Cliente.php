@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-class Cliente extends Usuario //essa é a forma de fazer herança em PHP;
+final class Cliente extends Usuario //essa é a forma de fazer herança em PHP; 
+//final=> essa palavra serve para dizer que nenhuma outra classe pode herdar dessa classe. ela é final.
 {
     // private string $nome;
     // private string $email;
