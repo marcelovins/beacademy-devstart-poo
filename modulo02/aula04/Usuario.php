@@ -10,9 +10,12 @@ class Usuario
     private string $senha;
     // private string $dataCadastro;
 
-    public function __construct(string $novoNome)
+    public function __construct(string $novoNome, string $email, string $cpf, string $senha)
     {
         $this->nome = $novoNome;
+        $this->email = $email;
+        $this->cpf = $cpf;
+        $this->senha = $senha;
 
     }
 
@@ -44,6 +47,16 @@ class Usuario
     public function setCpf(string $cpf): void
     {
         $this->cpf = $cpf;
+    }
+
+    public function getSenha(): string
+    {
+        return $this->senha;
+    }
+
+    public function setSenha(string $senha): void
+    {
+        $this->senha = $senha;
     }
 
 }

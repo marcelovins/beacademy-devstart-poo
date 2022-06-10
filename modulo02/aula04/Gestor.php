@@ -11,31 +11,40 @@ class Gestor extends Usuario
     private float $salario;
     private string $horario;
 
-    // public function __construct(string $novoNome)
-    // {
-    //     $this->nome = $novoNome;
+    public function __construct(string $novoNome, string $email, string $cpf, string $senha, float $salario, string $horario)
+    {
+        // parent::$nome = $novoNome;
+        // parent::$email = $email;
+        // parent::$cpf = $cpf;
+        // parent::$senha = $senha;
+        parent::setNome($novoNome);
+        parent::setEmail($email);
+        parent::setCpf($cpf);
+        parent::setSenha($senha);
+        $this->salario = $salario;
+        $this->horario = $horario;
 
-    // }
+    }
 
-    // public function getNome(): string
-    // {
-    //     return $this->nome;
-    // }
+    public function getSalario(): float
+    {
+        return $this->salario;
+    }
 
-    // public function setNome(string $novoNome): void
-    // {
-    //     $this->nome = $novoNome;
-    // }
+    public function setSalario(float $salario): void
+    {
+        $this->salario = $salario;
+    }
 
-    // public function getEmail(): string
-    // {
-    //     return $this->email;
-    // }
+    public function gethorario(): string
+    {
+        return $this->horario;
+    }
 
-    // public function setEmail(string $email): void
-    // {
-    //     $this->email = $email;
-    // }
+    public function setHorario(string $hoario): void
+    {
+        $this->horario = $horario;
+    }
 
     // public function getCpf(): string
     // {
