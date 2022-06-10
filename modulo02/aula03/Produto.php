@@ -16,11 +16,15 @@ class Produto
     //atributos
     private string $nome;
     private float $valor;
+    private string $descricao;
+    private readonly Categoria $categoria; //quando coloco readonly não é permitido método set neste objeto
 
-    public function __construct(string $novoNome, float $novoValor)
+    //método mágico de construção do objeto
+    public function __construct(string $novoNome, float $novoValor, Categoria $categoria)
     {
         $this->nome = $novoNome;
         $this->valor = $novoValor;
+        $this->categoria = $categoria;
     }
 
     
@@ -55,6 +59,11 @@ class Produto
             die('ops! valor não pode ser negativo!');
         }
         $this->valor = $novoValor;
+    }
+
+    public function setCategoria(Categoria $categoria): void
+    {
+        $this->categoria = $categoria;
     }
     
 
