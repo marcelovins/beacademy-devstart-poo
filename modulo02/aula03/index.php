@@ -17,7 +17,7 @@ $p1 = new Produto('Tenis', 299, $c3);
 // $p1 ->pegarValor();
 
 $p2 = new Produto('Saia Jeans', 150, $c1);
-$p2->setCategoria($c2);  //não irá funcionar por causa do readonly no objeto;
+// $p2->setCategoria($c2);  //não irá funcionar por causa do readonly no objeto;
 // $p2 ->setNome('saia jeans');
 // $p2 ->setValor(150);
 
