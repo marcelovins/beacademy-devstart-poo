@@ -4,10 +4,21 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-class ProductController 
+class ProductController extends AbstractController
 {
-    // public function IndexAction() : void
-    // {
-    //     echo 'estou dentro de uma Action, dentro do controller';
-    // }
+    public function listAction() : void
+    {
+        // echo dirname(__DIR__);
+        parent::render('product/list');
+    }
+    public function addAction() : void
+    {
+        // echo dirname(__DIR__);
+        parent::render('product/add');
+    }
+    public function editAction() : void
+    {
+        // echo dirname(__DIR__);
+        parent::render('product/edit');
+    }
 }
